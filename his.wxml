@@ -1,0 +1,9 @@
+<!--pages/his/his.wxml-->
+<button bindtap="Remove" style="height:50rpx;width:800rpx;margin-left:0rpx;margin-top:0rpx;background:transparent">
+  <test wx:if="{{result.length}}">清除历史记录</test>
+  <test wx:if="{{!result.length}}">还没上传数据哦</test>
+</button>
+<view wx:if="{{!result.length}}">{{dd}}</view>
+<view wx:for="{{result.length}}" wx:for-item="i"><test>第</test>{{i+1}}<test>名：</test>{{result[i]}}%</view>
+<image class = "bg" src="https://i.loli.net/2020/10/04/6qFHDaCxKubU2JW.gif" ></image>
+<audio loop="true" id="44"></audio>

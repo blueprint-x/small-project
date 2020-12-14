@@ -1,0 +1,26 @@
+<image wx:if="{{cum < 100}}" class = "bg" src = "/img/img2.gif"></image>
+<image wx:if="{{cum==100||num==0}}" class = "bg" src = "/img/img5.gif"></image>
+
+  <button bindtap="Clear" type="primary" style = "height:25rpx;width:240rpx;background:transparent"><test wx:if="{{cum==100||num==0}}" class="redX">重来</test><test wx:if="{{cum<100&&sec>0}}"style="color:black">重来</test></button>
+  <button bindtap="bindViewTap" style="height:25rpx;width:240rpx;margin-left:0rpx;margin-top:-20rpx;background:transparent">查看历史</button>
+  <button bindtap="upload" style="height:25rpx;margin-right:0;width:240rpx;margin-top:-30rpx;background:transparent"><test wx:if="{{cum<100&&sec>0}}">上传数据</test><test wx:if="{{cum==100||num==0}}" class="redX">上传数据</test></button>
+
+
+<button bindtap="ass" type="primary" style = "width:300rpx;height:160rpx;margin-left:70rpx;margin-top:0rpx;background:transparent"></button>
+<button bindtap="bra" type="primary" style = "width:100rpx;height:150rpx;margin-right:220rpx;margin-top:-70rpx;background:transparent"></button>
+<button bindtap="fuck" type="primary" style = "width:90rpx;height:80rpx;margin-right:520rpx;margin-top:-80rpx;background:transparent"></button>
+<!--background:transparent-->
+<view class="progress-box">
+  <view style="margin-top:60rpx">
+  LOVE:{{cum}}%
+  <test wx:if="{{sec>0}}"> 倒计时：</test>
+  {{sec}}
+  <test wx:if="{{sec>0}}">s</test>
+  <switch checked="{{aut}}" bindchange="aaut">是否自动上传</switch>
+  </view>
+  <progress style="width:700rpx;" border-radius="5" percent="{{cum}}" stroke-width="10" color="pink"/>
+</view>
+<audio loop="true" id="33"></audio>
+
+
+

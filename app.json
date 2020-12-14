@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/sgame/sgame",
+    "pages/2048/2048",
+    "pages/his/his",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black",
+    "pageOrientation":"auto",
+    "navigationStyle":"custom"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "img/OIP.jpg",
+      "selectedIconPath": "img/OIP.jpg"
+    },
+    {
+      "pagePath": "pages/2048/2048",
+      "text": "2048",
+      "iconPath": "img/logo.png",
+      "selectedIconPath": "img/logo.png"
+    },
+    {
+      "pagePath": "pages/sgame/sgame",
+      "text": "small game",
+      "iconPath": "img/img3-ti.jpg",
+      "selectedIconPath": "img/img3-ti.jpg"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
